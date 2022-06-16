@@ -10487,6 +10487,12 @@ footer .socials * {
   display: flex;
   gap: 20px;
 }
+.show_comic .show_thumb {
+  max-width: 25%;
+}
+.show_comic .show_thumb img {
+  width: 100%;
+}
 .show_comic p {
   padding: 10px 0 0 0;
 }

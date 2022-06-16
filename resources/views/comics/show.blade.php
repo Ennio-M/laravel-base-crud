@@ -6,7 +6,7 @@
     <main>
         <div class="container">
             <div class="show_comic">
-                <div>
+                <div class="show_thumb">
                     <img src="{{$comic->image}}" alt="{{$comic->title}}">
                 </div>
                 <div>
