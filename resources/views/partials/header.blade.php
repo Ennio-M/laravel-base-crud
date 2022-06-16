@@ -2,12 +2,12 @@
     <div class="container">
         <nav>
           <div class="logo">
-            <img src="{{asset('images/dc-logo.png')}}" alt="DC Logo">
+            <a href="/"><img src="{{asset('images/dc-logo.png')}}" alt="DC Logo"></a>
           </div>
           <section class="navbar">
             <ul>
               <li>Characters</li>
-              <li>Comics</li>
+              <li><a href="/">Comics</a></li>
               <li>Movies</li>
               <li>Tv</li>
               <li>Games</li>

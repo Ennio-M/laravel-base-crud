@@ -13,18 +13,18 @@
                 <div class="cards-holder">
                     @foreach ($fumetti as $fumetto)
                         <div class="card">
-                            <div class="thumb">
-                                <img src="{{$fumetto->image}}" alt="{{$fumetto->title}}">
-                            </div>
-                            <div class="description">
-                                <h5>{{$fumetto->title}}</h5>
-                            </div>
+                            <a href="{{route('comics.show', $fumetto->id)}}">
+                                <div class="thumb">
+                                    <img src="{{$fumetto->image}}" alt="{{$fumetto->title}}">
+                                </div>
+                                <div class="description">
+                                    <h5>{{$fumetto->title}}</h5>
+                                </div>
+                            </a>
                         </div>
                     @endforeach
                 <div class="button">
-                    <button>
-                        Load more
-                    </button>
+                    <a href="/comics/create">Aggiungi fumetto</a>
                 </div>
             </div>
         </section>

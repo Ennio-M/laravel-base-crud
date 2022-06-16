@@ -18,6 +18,9 @@ body{
 ul{
     list-style-type: none;
 }
+a{
+    text-decoration: none !important;
+}
 .container{
     width: 75%;
     height: 100%;
@@ -46,6 +49,9 @@ header{
      font-size: .9em;
      font-weight: 500;
      cursor: pointer;
+     a{
+        color: black;
+     }
    }
 }
 
@@ -83,7 +89,6 @@ footer{
         color: #797979;
         font-size: .8em;
         padding: 2px 0;
-        text-decoration: none;
     }
 }
 .footer-bottom{
@@ -164,14 +169,13 @@ footer{
 .button{
     text-align: center;
     width: 100%;
-    button{
+    a{
         text-transform: uppercase;
         font-size: 14px;
-        font-weight: 700;
+        font-weight: 600;
         color: white;
         background-color: #0282F9;
         padding: 6px 40px;
-        cursor: pointer;
     }
 }
 
@@ -219,5 +223,17 @@ footer{
     }
     .small{
         width: 30px !important;
+    }
+}
+
+
+.show_comic{
+    display: flex;
+    gap: 20px;
+    p{
+        padding: 10px 0 0 0;
+    }
+    h4{
+        padding-top: 10px;
     }
 }

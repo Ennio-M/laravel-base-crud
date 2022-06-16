@@ -10288,6 +10288,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .container {
   width: 75%;
   height: 100%;
@@ -10317,6 +10321,9 @@ header .navbar li {
   font-size: 0.9em;
   font-weight: 500;
   cursor: pointer;
+}
+header .navbar li a {
+  color: black;
 }
 
 footer .footer-top {
@@ -10349,7 +10356,6 @@ footer .links li a {
   color: #797979;
   font-size: 0.8em;
   padding: 2px 0;
-  text-decoration: none;
 }
 footer .footer-bottom {
   height: 90px;
@@ -10425,14 +10431,13 @@ footer .socials * {
   text-align: center;
   width: 100%;
 }
-.button button {
+.button a {
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: white;
   background-color: #0282F9;
   padding: 6px 40px;
-  cursor: pointer;
 }
 
 .card {
@@ -10476,4 +10481,15 @@ footer .socials * {
 }
 .sections .small {
   width: 30px !important;
+}
+
+.show_comic {
+  display: flex;
+  gap: 20px;
+}
+.show_comic p {
+  padding: 10px 0 0 0;
+}
+.show_comic h4 {
+  padding-top: 10px;
 }
