@@ -15,6 +15,9 @@
                     <p>Serie: {{$comic->series}}</p>
                     <p>Tipo: {{$comic->type}}</p>
                     <h4>Prezzo: {{$comic->price}}</h4>
+                    <button>
+                        <a href="{{route('comics.edit', $comic->id)}}">Modifica</a>
+                    </button>
                 </div>
             </div>
         </div>

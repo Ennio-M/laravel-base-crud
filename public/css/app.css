@@ -10499,3 +10499,9 @@ footer .socials * {
 .show_comic h4 {
   padding-top: 10px;
 }
+.show_comic a {
+  color: black;
+}
+.show_comic button {
+  margin-top: 15px;
+}
