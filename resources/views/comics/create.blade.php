@@ -11,7 +11,10 @@
                     @csrf
                     <div class="field">
                         <label for="title">Titolo</label>
-                        <input type="text" id="title" name="title" placeholder="Inserisci il titolo del nuovo fumetto">
+                        <input type="text" id="title" name="title" placeholder="Inserisci il titolo del nuovo fumetto" class="@error('title') is-invalid @enderror" value="{{old('title')}}">
+                        @error('title')
+                            <p class="red">{{$message}}</p>
+                        @enderror
                     </div>
                     <div class="field">
                         <label for="description">Descrizione</label>
@@ -19,19 +22,31 @@
                     </div>
                     <div class="field">
                         <label for="image">Immagine</label>
-                        <input type="text" id="image" name="image" placeholder="Inserisci l'url della copertina">
+                        <input type="text" id="image" name="image" placeholder="Inserisci l'url della copertina" class="@error('image') is-invalid @enderror" value="{{old('image')}}">
+                        @error('image')
+                            <p class="red">{{$message}}</p>
+                        @enderror
                     </div>
                     <div class="field">
                         <label for="price">Prezzo</label>
-                        <input type="number" id="price" name="price" placeholder="Inserisci il prezzo del nuovo fumetto">
+                        <input type="number" step="0.01" id="price" name="price" placeholder="Inserisci il prezzo del nuovo fumetto" class="@error('price') is-invalid @enderror" value="{{old('price')}}">
+                        @error('price')
+                            <p class="red">{{$message}}</p>
+                        @enderror
                     </div>
                     <div class="field">
                         <label for="series">Serie</label>
-                        <input type="text" id="series" name="series" placeholder="Inserisci la serie del nuovo fumetto">
+                        <input type="text" id="series" name="series" placeholder="Inserisci la serie del nuovo fumetto" class="@error('series') is-invalid @enderror" value="{{old('series')}}">
+                        @error('series')
+                            <p class="red">{{$message}}</p>
+                        @enderror
                     </div>
                     <div class="field">
                         <label for="sale_date">Data di rilascio</label>
-                        <input type="date" id="sale_date" name="sale_date" placeholder="Inserisci la data di rilascio del nuovo fumetto">
+                        <input type="date" id="sale_date" name="sale_date" placeholder="Inserisci la data di rilascio del nuovo fumetto" class="@error('sale_date') is-invalid @enderror" value="{{old('sale_date')}}">
+                        @error('sale_date')
+                            <p class="red">{{$message}}</p>
+                        @enderror
                     </div>
                     <div class="field">
                         <label for="type">Seleziona il tipo</label>
