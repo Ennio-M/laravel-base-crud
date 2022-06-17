@@ -21,10 +21,11 @@
                     <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit">Cancella</button>
+                        <button type="submit" id="delete_button">Cancella</button>
                     </form>
                 </div>
             </div>
         </div>
     </main>
+    <script src="../js/app.js"></script>
 @endsection

@@ -19380,6 +19380,15 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+var delete_button = document.getElementById('delete_button');
+delete_button.addEventListener("click", function (event) {
+  var resp = confirm('Sei sicuro di voler eliminare il fumetto?');
+
+  if (!resp) {
+    event.preventDefault();
+  }
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
