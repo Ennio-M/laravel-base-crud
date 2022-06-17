@@ -7,7 +7,7 @@
           <section class="navbar">
             <ul>
               <li>Characters</li>
-              <li><a href="/">Comics</a></li>
+              <li class="{{Route::currentRouteName()=='index' ? 'active' : ''}}"><a href="/">Comics</a></li>
               <li>Movies</li>
               <li>Tv</li>
               <li>Games</li>

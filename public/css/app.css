@@ -10298,6 +10298,13 @@ a {
   margin: 0 auto;
 }
 
+.active {
+  border-bottom: 4px solid #0282F9;
+}
+.active a {
+  color: #0282F9 !important;
+}
+
 header {
   height: 120px;
 }
@@ -10486,9 +10493,10 @@ footer .socials * {
 .show_comic {
   display: flex;
   gap: 20px;
+  margin: 50px 0;
 }
 .show_comic .show_thumb {
-  max-width: 25%;
+  width: 50%;
 }
 .show_comic .show_thumb img {
   width: 100%;
@@ -10504,4 +10512,14 @@ footer .socials * {
 }
 .show_comic button {
   margin-top: 15px;
+}
+
+.form {
+  margin: 40px 0;
+}
+.form .field {
+  padding-top: 10px;
+}
+.form button {
+  margin-top: 10px;
 }
